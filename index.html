@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temu Dealership - exceptional vehicles, thoughtfully selected.">
+    <title>Temu Dealership | Drive Something Remarkable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css?v=3">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Temu Dealership home"><span class="brand-mark">T</span><span>temu<span class="brand-light">dealership</span></span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#inventory">Inventory</a>
+            <a href="#experience">Our approach</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button class="sign-in-link" type="button" data-open-signin>Sign in</button>
+            <a class="header-link" href="#contact">Book a visit <span aria-hidden="true">↗</span></a>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> Independent automotive studio</p>
+                <h1>Find the car<br><em>you’ll remember.
+                    <br><br>
+                     This is a demo for educational purposes only.
+                </em></h1>
+                <p class="hero-text">Rare finds, modern classics, and everyday icons. Every vehicle is hand-picked, inspected, and ready for its next chapter.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#inventory">Explore inventory <span>→</span></a>
+                    <a class="text-link" href="#experience">Why Temu <span>↘</span></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="image-overlay"></div>
+                <div class="hero-caption"><span>01</span><strong>Curated, never crowded.</strong><span>Scroll to explore ↓</span></div>
+            </div>
+        </section>
+
+        <section class="intro-strip" id="experience">
+            <p>Our standard</p>
+            <h2>Good cars. Good stories.<br><span>No compromises.</span></h2>
+            <p class="intro-detail">Buying a car should feel as good as driving one. We make the process personal, transparent, and completely on your terms.</p>
+        </section>
+
+        <section class="inventory" id="inventory">
+            <div class="section-heading">
+                <div><p class="eyebrow"><span></span> The current collection</p><h2>Recently arrived</h2></div>
+                <div class="inventory-tools">
+                    <label class="search-box"><span aria-hidden="true">⌕</span><input id="vehicle-search" type="search" placeholder="Search vehicles" aria-label="Search vehicles"></label>
+                    <a class="text-link" href="#contact">View all vehicles <span>→</span></a>
+                </div>
+            </div>
+            <div class="vehicle-grid">
+                <article class="vehicle-card" data-vehicle="Porsche 911 Carrera 2021">
+                    <div class="vehicle-image vehicle-one"><span class="vehicle-tag">Featured</span><button aria-label="Save Porsche 911">♡</button></div>
+                    <div class="vehicle-info"><div><h3>2021 Porsche 911 Carrera</h3><p>Guards Red · 18,420 miles</p></div><strong>$124,900</strong></div>
+                </article>
+                <article class="vehicle-card" data-vehicle="Land Rover Defender 2023">
+                    <div class="vehicle-image vehicle-two"><span class="vehicle-tag">Just in</span><button aria-label="Save Land Rover Defender">♡</button></div>
+                    <div class="vehicle-info"><div><h3>2023 Land Rover Defender</h3><p>Carpathian Grey · 8,109 miles</p></div><strong>$76,500</strong></div>
+                </article>
+                <article class="vehicle-card" data-vehicle="Mercedes-Benz G 550 2019">
+                    <div class="vehicle-image vehicle-three"><span class="vehicle-tag">Rare find</span><button aria-label="Save Mercedes-Benz G-Class">♡</button></div>
+                    <div class="vehicle-info"><div><h3>2019 Mercedes-Benz G 550</h3><p>Obsidian Black · 31,265 miles</p></div><strong>$98,750</strong></div>
+                </article>
+            </div>
+            <p class="empty-state" hidden>No vehicles match that search.</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <div><p class="eyebrow"><span></span> Come see for yourself</p><h2>Your next drive<br>starts here.</h2></div>
+            <div class="contact-detail"><p>Visit our dealership for a relaxed, no-pressure look around. We’re open Monday through Saturday, 9am–6pm.</p><button class="button button-light" type="button" data-open-chat>Start a conversation <span>→</span></button></div>
+        </section>
+    </main>
+    <footer><span>© 2024 Temu Dealership</span><span>Built for the road ahead.</span><a href="#top">Back to top ↑</a></footer>
+    <div class="modal-backdrop" id="signin-modal" hidden>
+        <section class="signin-modal" role="dialog" aria-modal="true" aria-labelledby="signin-title">
+            <button class="modal-close" type="button" aria-label="Close sign in" data-close-signin>×</button>
+            <p class="eyebrow"><span></span> Your Temu garage</p>
+            <h2 id="signin-title">Welcome back.</h2>
+            <p class="modal-copy">Sign in to save favorites and keep track of your next drive.</p>
+            <form id="signin-form">
+                <label>Email address<input type="email" name="email" placeholder="you@example.com" required></label>
+                <label>Password<input type="password" name="password" placeholder="Enter your password" minlength="6" required></label>
+                <button class="button button-dark" type="submit">Sign in <span>→</span></button>
+            </form>
+            <p class="form-status" id="form-status" role="status"></p>
+        </section>
+    </div>
+    <aside class="chat-panel" id="chat-panel" aria-label="Temu dealership chat" hidden>
+        <div class="chat-header"><div><strong>Temu concierge</strong><span>Usually replies instantly</span></div><button type="button" aria-label="Close chat" data-close-chat>×</button></div>
+        <div class="chat-messages" id="chat-messages"><p class="chat-bubble agent">Hi, I’m here to help you find the right next drive. Ask me about inventory, visits, or financing.</p></div>
+        <form class="chat-form" id="chat-form"><input id="chat-input" type="text" placeholder="Type your message..." aria-label="Message" autocomplete="off" required><button type="submit" aria-label="Send message">↑</button></form>
+    </aside>
+    <button class="chat-launcher" type="button" data-open-chat aria-label="Open chat"> <span>Chat</span> <b>↗</b></button>
+    <script>
+        const modal = document.querySelector('#signin-modal');
+        const search = document.querySelector('#vehicle-search');
+        const cards = [...document.querySelectorAll('.vehicle-card')];
+        const emptyState = document.querySelector('.empty-state');
+        const form = document.querySelector('#signin-form');
+        const status = document.querySelector('#form-status');
+        const chatPanel = document.querySelector('#chat-panel');
+        const chatMessages = document.querySelector('#chat-messages');
+        const chatForm = document.querySelector('#chat-form');
+        const chatInput = document.querySelector('#chat-input');
+
+        document.querySelectorAll('[data-open-signin]').forEach((button) => button.addEventListener('click', () => {
+            modal.hidden = false;
+            modal.querySelector('input').focus();
+        }));
+        document.querySelector('[data-close-signin]').addEventListener('click', () => { modal.hidden = true; });
+        modal.addEventListener('click', (event) => { if (event.target === modal) modal.hidden = true; });
+        document.addEventListener('keydown', (event) => { if (event.key === 'Escape') modal.hidden = true; });
+
+        search.addEventListener('input', () => {
+            const query = search.value.trim().toLowerCase();
+            let visible = 0;
+            cards.forEach((card) => {
+                const matches = card.dataset.vehicle.toLowerCase().includes(query);
+                card.hidden = !matches;
+                if (matches) visible += 1;
+            });
+            emptyState.hidden = visible !== 0;
+        });
+
+        document.querySelectorAll('.vehicle-image button').forEach((button) => button.addEventListener('click', () => {
+            button.classList.toggle('saved');
+            button.textContent = button.classList.contains('saved') ? '♥' : '♡';
+            button.setAttribute('aria-label', button.classList.contains('saved') ? 'Remove saved vehicle' : 'Save vehicle');
+        }));
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            status.textContent = 'Thanks. Your Temu garage is ready.';
+            form.reset();
+        });
+
+        document.querySelectorAll('[data-open-chat]').forEach((button) => button.addEventListener('click', () => {
+            chatPanel.hidden = false;
+            chatInput.focus();
+        }));
+        document.querySelector('[data-close-chat]').addEventListener('click', () => { chatPanel.hidden = true; });
+        chatForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const message = chatInput.value.trim();
+            if (!message) return;
+            const userMessage = document.createElement('p');
+            userMessage.className = 'chat-bubble user';
+            userMessage.textContent = message;
+            chatMessages.append(userMessage);
+            const response = document.createElement('p');
+            response.className = 'chat-bubble agent';
+            const lowerMessage = message.toLowerCase();
+            response.textContent = lowerMessage.includes('visit') || lowerMessage.includes('hour')
+                ? 'We are open Monday through Saturday, 9am–6pm. I can help you book a visit.'
+                : lowerMessage.includes('finance') || lowerMessage.includes('loan')
+                    ? 'We offer flexible financing options. Send us your preferred vehicle and we will prepare the details.'
+                    : lowerMessage.includes('porsche') || lowerMessage.includes('defender') || lowerMessage.includes('mercedes')
+                        ? 'Great choice. Search the current collection above, then save a vehicle or ask us to arrange a test drive.'
+                        : 'Thanks for reaching out. A Temu specialist will be happy to help with that. What vehicle are you considering?';
+            chatMessages.append(response);
+            chatInput.value = '';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        });
+    </script>
+</body>
+</html>
